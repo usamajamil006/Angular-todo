@@ -29,8 +29,8 @@ export class TodoService {
   }
 
   //Add Todo
-  addTodo(todo:Todo): Observable<Todo["id"]>{
-    return this.http.post<Todo["id"]>(this.todosUrl,todo,httpOptions)
+  addTodo(todo:Todo): Observable<Todo>{
+    return this.http.post<Todo>(this.todosUrl,todo,httpOptions)
   }
 
   // Toggle completed
